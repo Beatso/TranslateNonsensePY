@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# requires a raw pastebin link to work. more than 1000 characters sometimes breaks it.
+
 from googletrans import Translator, LANGUAGES
 from random import choice
 from urllib.request import urlopen
@@ -11,7 +13,7 @@ for lang in LANGUAGES : language_list.append(lang)
 
 times_to_translate = 100
 times_left = times_to_translate
-web_file = urlopen("https://pastebin.com/raw/QVN9GXMx")
+web_file = urlopen("INSERT PASTEBIN URL")
 translation = web_file.read()
 translation = translation.decode().split("\r\n")
 translation = "\n".join(translation)
